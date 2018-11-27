@@ -7,6 +7,8 @@ package apiary;
  * @since 1.0
  *
  */
+import beehive.Beehive;
+
 
 public class Apiary {
     private static Apiary single_instance = null;
