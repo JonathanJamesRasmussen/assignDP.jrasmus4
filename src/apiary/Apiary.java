@@ -13,6 +13,7 @@ public class Apiary {
     
     private Apiary() {
         //TODO create hives
+        System.out.println("Test");
     }
     
     public static Apiary getInstance() {

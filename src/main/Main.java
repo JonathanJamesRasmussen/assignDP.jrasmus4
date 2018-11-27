@@ -5,8 +5,10 @@ package main;
 *@since 1.0
 */
 
+import apiary.Apiary;
+
 public class Main {
     public static void main(String[] args) {
-        
+        Apiary myApiary = Apiary.getInstance();
     }
 }

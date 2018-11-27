@@ -2,22 +2,31 @@ plugins {
   id "com.github.spotbugs" version "1.6.5"
 }
 
+
 apply plugin: 'application'
 apply plugin: 'jacoco'
 apply plugin: 'checkstyle'
 apply plugin: 'java'
 
-mainClassName = 'Main'
+mainClassName = 'main/Main'
+sourceSets.main.java.srcDirs = ['src']
 
 compileJava.options.encoding = 'UTF-8'
+
+buildDir = 'build'
 
 repositories {
 	jcenter()
 }
 
 dependencies {
-
 	testCompile 'junit:junit:4.12'
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'main/Main'
+	}
 }
 
 //Jacoco config
