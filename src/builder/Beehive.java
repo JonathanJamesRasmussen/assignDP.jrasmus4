@@ -1,4 +1,7 @@
-package beehive;
+package builder;
+
+import nll.object.Room;
+
 /**
  * 
  * @author Jonathan Rasmussen
@@ -38,5 +41,25 @@ public class Beehive<Bee> {
     public Beehive<Bee> setRooms(Room[] rooms) {
         this.rooms = rooms;
         return this;
+    }
+    
+    public String getName() {
+        return this.hiveName;
+    }
+    
+    public int getNumBees() {
+        return this.startingNumBees;
+    }
+    
+    public String getSpecies() {
+        return this.species;
+    }
+    
+    public int getNumRooms() {
+        return this.numRooms;
+    }
+    
+    public Room[] getRooms() {
+        return this.rooms;
     }
 }

@@ -1,4 +1,4 @@
-package bee;
+package decorator;
 
 /**
  * 
@@ -34,5 +34,9 @@ public class BeeDecorator implements Bee {
     
     public void perish() {
         this.decoratedBee.perish();
+    }
+
+    public void talk() {
+        this.decoratedBee.talk();
     }
 }

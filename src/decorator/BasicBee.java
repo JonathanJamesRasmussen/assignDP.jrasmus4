@@ -1,4 +1,4 @@
-package bee;
+package decorator;
 
 /**
  * 
@@ -37,5 +37,8 @@ public class BasicBee implements Bee {
         power = 0;
         consumption = 0;
         collection = 0;
+    }
+    public void talk() {
+        System.out.println("Hello, ");
     }
 }

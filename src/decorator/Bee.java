@@ -1,4 +1,4 @@
-package bee;
+package decorator;
 
 /**
  * 
@@ -17,5 +17,6 @@ public interface Bee {
     void rest();
     void harvest();
     void perish();
+    void talk();
     
 }

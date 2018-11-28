@@ -1,17 +1,17 @@
-package bee;
+package decorator;
 /**
  * 
  * @author Jonathan Rasmussen
  * @version 1.0
  * @since 1.0
  */
-public class BumbleBee extends BeeDecorator{
+public class HoneyBee extends BeeDecorator{
     
-    int power = 2;
+    int power = 1;
     int consumption = 1;
-    int collection = 1;
+    int collection = 2;
     
-    public BumbleBee(Bee bee) {
+    public HoneyBee(Bee bee) {
         super(bee);
     }
     
@@ -33,5 +33,11 @@ public class BumbleBee extends BeeDecorator{
     @Override
     public void perish() {
         super.perish();
+    }
+    
+    @Override
+    public void talk() {
+        super.talk();
+        System.out.println("I'm a Honey Bee!");
     }
 }

@@ -1,17 +1,17 @@
-package bee;
+package decorator;
 /**
  * 
  * @author Jonathan Rasmussen
  * @version 1.0
  * @since 1.0
  */
-public class HoneyBee extends BeeDecorator{
+public class KillerBee extends BeeDecorator{
     
-    int power = 1;
-    int consumption = 1;
-    int collection = 2;
+    int power = 3;
+    int consumption = 2;
+    int collection = 1;
     
-    public HoneyBee(Bee bee) {
+    public KillerBee(Bee bee) {
         super(bee);
     }
     
