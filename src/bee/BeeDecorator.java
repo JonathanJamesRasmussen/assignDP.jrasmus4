@@ -10,20 +10,29 @@ package bee;
 public class BeeDecorator implements Bee {
     
     protected Bee decoratedBee;
+    protected int food;
+    protected int power;
+    protected int consumption;
+    protected int collection;
     
     public BeeDecorator(Bee decoratedBee) {
+        super();
         this.decoratedBee = decoratedBee;
     }
     
-    public void battle() {
-        decoratedBee.battle();
+    public void battle(Bee opponent) {
+        this.decoratedBee.battle(opponent);
     }
     
     public void rest() {
-        decoratedBee.rest();
+        this.decoratedBee.rest();
     }
     
     public void harvest() {
-        decoratedBee.harvest();
+        this.decoratedBee.harvest();
+    }
+    
+    public void perish() {
+        this.decoratedBee.perish();
     }
 }

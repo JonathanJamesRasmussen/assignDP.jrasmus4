@@ -9,8 +9,13 @@ package bee;
 
 public interface Bee {
     
-    public void battle();
-    public void rest();
-    public void harvest();
+    
+    int power = 0;
+    int consumption = 0;
+    int collection = 0;
+    void battle(Bee opponent);
+    void rest();
+    void harvest();
+    void perish();
     
 }
